@@ -1,6 +1,6 @@
 import sqlite3
 from random import randint
-conn = sqlite3.connect(r"C:\Users\charles.sharpe\OneDrive - Global Graphics PLC\Documents\1_CS\Random\Future Learn\Programming 103\SQL_LITE_1\computer_cards.db")
+conn = sqlite3.connect(r"C:\Users\charles.sharpe\OneDrive - Global Graphics PLC\Documents\1_CS\FutureLearn_RaspPi\Programming 103\SQL_LITE_1\computer_cards.db")
 
 def read_all_cards():
     result = conn.execute("SELECT * FROM computer")

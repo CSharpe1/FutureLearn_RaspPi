@@ -1,5 +1,5 @@
 import sqlite3
-conn = sqlite3.connect(r"C:\Users\charles.sharpe\OneDrive - Global Graphics PLC\Documents\1_CS\Random\Future Learn\Programming 103\SQL_LITE_1\computer_cards.db")
+conn = sqlite3.connect(r"C:\Users\charles.sharpe\OneDrive - Global Graphics PLC\Documents\1_CS\FutureLearn_RaspPi\Programming 103\SQL_LITE_1\computer_cards.db")
 
 
 def create(name, cores, cpu_speed, ram):

@@ -5,6 +5,21 @@ conn = sqlite3.connect(r"C:\Users\charles.sharpe\OneDrive - Global Graphics PLC\
 
 
 
+
+def create(name, cores, cpu_speed, cost):
+    insert_sql = "INSERT INTO computer(name, cores, cpu_speed, cost) VALUES ('{}', {}, '{}','{}')".format(name, cores, cpu_speed, cost)
+
+    conn.execute(insert_sql)
+
+    conn.commit()
+
+
+
+
+
+create('test', 4, 2.0, 2000)
+
+
 result = conn.execute("SELECT * FROM computer")
 print(result)
 
